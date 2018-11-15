@@ -1,0 +1,2 @@
+include AUTHORS CHANGES README LICENSE VERSION
+recursive-include ambition_lists/templates *
