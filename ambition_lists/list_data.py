@@ -1,5 +1,5 @@
 from ambition_form_validators import HEADACHE, VISUAL_LOSS
-from edc_constants.constants import OTHER, NORMAL
+from edc_constants.constants import OTHER, NORMAL, NONE
 from edc_list_data import PreloadData
 
 list_data = {
@@ -41,6 +41,7 @@ list_data = {
         ('tmp_smx_Cotrimoxazole', ' TMP-SMX/Cotrimoxazole'),
         ('anti_convulsants', 'Anticonvulsants'),
         ('antibiotics', 'Antibiotics'),
+        (NONE, 'None, no other drugs/interventions given'),
         (OTHER, 'Other, specify')
     ],
     'ambition_lists.significantnewdiagnosis': [
