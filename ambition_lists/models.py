@@ -1,4 +1,5 @@
-from edc_base.model_mixins import ListModelMixin, BaseUuidModel
+from edc_base.model_mixins import BaseUuidModel
+from edc_list_data.model_mixins import ListModelMixin
 
 """Models with explicit db_table were moved into this
 module after the system went live.
@@ -7,55 +8,55 @@ module after the system went live.
 
 class Antibiotic(ListModelMixin, BaseUuidModel):
 
-    class Meta:
+    class Meta(ListModelMixin.Meta):
         db_table = 'ambition_subject_antibiotic'
 
 
 class Day14Medication(ListModelMixin, BaseUuidModel):
 
-    class Meta:
+    class Meta(ListModelMixin.Meta):
         db_table = 'ambition_subject_day14medication'
 
 
 class Medication(ListModelMixin, BaseUuidModel):
 
-    class Meta:
+    class Meta(ListModelMixin.Meta):
         db_table = 'ambition_subject_medication'
 
 
 class Neurological(ListModelMixin, BaseUuidModel):
 
-    class Meta:
+    class Meta(ListModelMixin.Meta):
         db_table = 'ambition_subject_neurological'
 
 
 class SignificantNewDiagnosis(ListModelMixin, BaseUuidModel):
 
-    class Meta:
+    class Meta(ListModelMixin.Meta):
         db_table = 'ambition_subject_significantnewdiagnosis'
 
 
 class Symptom(ListModelMixin, BaseUuidModel):
 
-    class Meta:
+    class Meta(ListModelMixin.Meta):
         db_table = 'ambition_subject_symptom'
 
 
 class OtherDrug(ListModelMixin, BaseUuidModel):
 
-    class Meta:
+    class Meta(ListModelMixin.Meta):
         db_table = 'ambition_subject_otherdrug'
 
 
 class AbnormalResultsReason(ListModelMixin, BaseUuidModel):
 
-    class Meta:
+    class Meta(ListModelMixin.Meta):
         db_table = 'ambition_subject_abnormalresultsreason'
 
 
 class CXRType(ListModelMixin, BaseUuidModel):
 
-    class Meta:
+    class Meta(ListModelMixin.Meta):
         db_table = 'ambition_subject_cxrtype'
 
 
