@@ -28,7 +28,9 @@ list_data = {
         ('co_trimoxazole', 'Co-trimoxazole'),
         ('fluconazole', 'Fluconazole'),
         ('rifampicin', ' Rifampicin'),
-        (OTHER, 'Other')
+        (OTHER, 'Other'),
+        (NONE, 'None, no other medications given'),
+        (NOT_APPLICABLE, 'Not applicable'),
     ],
     'ambition_lists.medication': [
         ('TMP-SMX', 'TMP-SMX'),
