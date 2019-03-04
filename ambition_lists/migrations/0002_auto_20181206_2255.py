@@ -5,45 +5,36 @@ from django.db import migrations
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('ambition_lists', '0001_initial'),
-    ]
+    dependencies = [("ambition_lists", "0001_initial")]
 
     operations = [
         migrations.AlterModelOptions(
-            name='abnormalresultsreason',
-            options={'ordering': ['display_index', 'name']},
+            name="abnormalresultsreason",
+            options={"ordering": ["display_index", "name"]},
         ),
         migrations.AlterModelOptions(
-            name='antibiotic',
-            options={'ordering': ['display_index', 'name']},
+            name="antibiotic", options={"ordering": ["display_index", "name"]}
         ),
         migrations.AlterModelOptions(
-            name='cxrtype',
-            options={'ordering': ['display_index', 'name']},
+            name="cxrtype", options={"ordering": ["display_index", "name"]}
         ),
         migrations.AlterModelOptions(
-            name='day14medication',
-            options={'ordering': ['display_index', 'name']},
+            name="day14medication", options={"ordering": ["display_index", "name"]}
         ),
         migrations.AlterModelOptions(
-            name='medication',
-            options={'ordering': ['display_index', 'name']},
+            name="medication", options={"ordering": ["display_index", "name"]}
         ),
         migrations.AlterModelOptions(
-            name='neurological',
-            options={'ordering': ['display_index', 'name']},
+            name="neurological", options={"ordering": ["display_index", "name"]}
         ),
         migrations.AlterModelOptions(
-            name='otherdrug',
-            options={'ordering': ['display_index', 'name']},
+            name="otherdrug", options={"ordering": ["display_index", "name"]}
         ),
         migrations.AlterModelOptions(
-            name='significantnewdiagnosis',
-            options={'ordering': ['display_index', 'name']},
+            name="significantnewdiagnosis",
+            options={"ordering": ["display_index", "name"]},
         ),
         migrations.AlterModelOptions(
-            name='symptom',
-            options={'ordering': ['display_index', 'name']},
+            name="symptom", options={"ordering": ["display_index", "name"]}
         ),
     ]
