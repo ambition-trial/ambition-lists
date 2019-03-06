@@ -8,284 +8,480 @@ import django_audit_fields.models.audit_model_mixin
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('ambition_lists', '0002_auto_20181206_2255'),
-    ]
+    dependencies = [("ambition_lists", "0002_auto_20181206_2255")]
 
     operations = [
         migrations.AlterField(
-            model_name='abnormalresultsreason',
-            name='created',
-            field=models.DateTimeField(blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow),
+            model_name="abnormalresultsreason",
+            name="created",
+            field=models.DateTimeField(
+                blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
+            ),
         ),
         migrations.AlterField(
-            model_name='abnormalresultsreason',
-            name='hostname_modified',
-            field=django_audit_fields.fields.hostname_modification_field.HostnameModificationField(blank=True, help_text='System field. (modified on every save)', max_length=50),
+            model_name="abnormalresultsreason",
+            name="hostname_modified",
+            field=django_audit_fields.fields.hostname_modification_field.HostnameModificationField(
+                blank=True,
+                help_text="System field. (modified on every save)",
+                max_length=50,
+            ),
         ),
         migrations.AlterField(
-            model_name='abnormalresultsreason',
-            name='modified',
-            field=models.DateTimeField(blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow),
+            model_name="abnormalresultsreason",
+            name="modified",
+            field=models.DateTimeField(
+                blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
+            ),
         ),
         migrations.AlterField(
-            model_name='abnormalresultsreason',
-            name='user_created',
-            field=django_audit_fields.fields.userfield.UserField(blank=True, help_text='Updated by admin.save_model', max_length=50, verbose_name='user created'),
+            model_name="abnormalresultsreason",
+            name="user_created",
+            field=django_audit_fields.fields.userfield.UserField(
+                blank=True,
+                help_text="Updated by admin.save_model",
+                max_length=50,
+                verbose_name="user created",
+            ),
         ),
         migrations.AlterField(
-            model_name='abnormalresultsreason',
-            name='user_modified',
-            field=django_audit_fields.fields.userfield.UserField(blank=True, help_text='Updated by admin.save_model', max_length=50, verbose_name='user modified'),
+            model_name="abnormalresultsreason",
+            name="user_modified",
+            field=django_audit_fields.fields.userfield.UserField(
+                blank=True,
+                help_text="Updated by admin.save_model",
+                max_length=50,
+                verbose_name="user modified",
+            ),
         ),
         migrations.AlterField(
-            model_name='antibiotic',
-            name='created',
-            field=models.DateTimeField(blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow),
+            model_name="antibiotic",
+            name="created",
+            field=models.DateTimeField(
+                blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
+            ),
         ),
         migrations.AlterField(
-            model_name='antibiotic',
-            name='hostname_modified',
-            field=django_audit_fields.fields.hostname_modification_field.HostnameModificationField(blank=True, help_text='System field. (modified on every save)', max_length=50),
+            model_name="antibiotic",
+            name="hostname_modified",
+            field=django_audit_fields.fields.hostname_modification_field.HostnameModificationField(
+                blank=True,
+                help_text="System field. (modified on every save)",
+                max_length=50,
+            ),
         ),
         migrations.AlterField(
-            model_name='antibiotic',
-            name='modified',
-            field=models.DateTimeField(blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow),
+            model_name="antibiotic",
+            name="modified",
+            field=models.DateTimeField(
+                blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
+            ),
         ),
         migrations.AlterField(
-            model_name='antibiotic',
-            name='user_created',
-            field=django_audit_fields.fields.userfield.UserField(blank=True, help_text='Updated by admin.save_model', max_length=50, verbose_name='user created'),
+            model_name="antibiotic",
+            name="user_created",
+            field=django_audit_fields.fields.userfield.UserField(
+                blank=True,
+                help_text="Updated by admin.save_model",
+                max_length=50,
+                verbose_name="user created",
+            ),
         ),
         migrations.AlterField(
-            model_name='antibiotic',
-            name='user_modified',
-            field=django_audit_fields.fields.userfield.UserField(blank=True, help_text='Updated by admin.save_model', max_length=50, verbose_name='user modified'),
+            model_name="antibiotic",
+            name="user_modified",
+            field=django_audit_fields.fields.userfield.UserField(
+                blank=True,
+                help_text="Updated by admin.save_model",
+                max_length=50,
+                verbose_name="user modified",
+            ),
         ),
         migrations.AlterField(
-            model_name='cxrtype',
-            name='created',
-            field=models.DateTimeField(blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow),
+            model_name="cxrtype",
+            name="created",
+            field=models.DateTimeField(
+                blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
+            ),
         ),
         migrations.AlterField(
-            model_name='cxrtype',
-            name='hostname_modified',
-            field=django_audit_fields.fields.hostname_modification_field.HostnameModificationField(blank=True, help_text='System field. (modified on every save)', max_length=50),
+            model_name="cxrtype",
+            name="hostname_modified",
+            field=django_audit_fields.fields.hostname_modification_field.HostnameModificationField(
+                blank=True,
+                help_text="System field. (modified on every save)",
+                max_length=50,
+            ),
         ),
         migrations.AlterField(
-            model_name='cxrtype',
-            name='modified',
-            field=models.DateTimeField(blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow),
+            model_name="cxrtype",
+            name="modified",
+            field=models.DateTimeField(
+                blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
+            ),
         ),
         migrations.AlterField(
-            model_name='cxrtype',
-            name='user_created',
-            field=django_audit_fields.fields.userfield.UserField(blank=True, help_text='Updated by admin.save_model', max_length=50, verbose_name='user created'),
+            model_name="cxrtype",
+            name="user_created",
+            field=django_audit_fields.fields.userfield.UserField(
+                blank=True,
+                help_text="Updated by admin.save_model",
+                max_length=50,
+                verbose_name="user created",
+            ),
         ),
         migrations.AlterField(
-            model_name='cxrtype',
-            name='user_modified',
-            field=django_audit_fields.fields.userfield.UserField(blank=True, help_text='Updated by admin.save_model', max_length=50, verbose_name='user modified'),
+            model_name="cxrtype",
+            name="user_modified",
+            field=django_audit_fields.fields.userfield.UserField(
+                blank=True,
+                help_text="Updated by admin.save_model",
+                max_length=50,
+                verbose_name="user modified",
+            ),
         ),
         migrations.AlterField(
-            model_name='day14medication',
-            name='created',
-            field=models.DateTimeField(blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow),
+            model_name="day14medication",
+            name="created",
+            field=models.DateTimeField(
+                blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
+            ),
         ),
         migrations.AlterField(
-            model_name='day14medication',
-            name='hostname_modified',
-            field=django_audit_fields.fields.hostname_modification_field.HostnameModificationField(blank=True, help_text='System field. (modified on every save)', max_length=50),
+            model_name="day14medication",
+            name="hostname_modified",
+            field=django_audit_fields.fields.hostname_modification_field.HostnameModificationField(
+                blank=True,
+                help_text="System field. (modified on every save)",
+                max_length=50,
+            ),
         ),
         migrations.AlterField(
-            model_name='day14medication',
-            name='modified',
-            field=models.DateTimeField(blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow),
+            model_name="day14medication",
+            name="modified",
+            field=models.DateTimeField(
+                blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
+            ),
         ),
         migrations.AlterField(
-            model_name='day14medication',
-            name='user_created',
-            field=django_audit_fields.fields.userfield.UserField(blank=True, help_text='Updated by admin.save_model', max_length=50, verbose_name='user created'),
+            model_name="day14medication",
+            name="user_created",
+            field=django_audit_fields.fields.userfield.UserField(
+                blank=True,
+                help_text="Updated by admin.save_model",
+                max_length=50,
+                verbose_name="user created",
+            ),
         ),
         migrations.AlterField(
-            model_name='day14medication',
-            name='user_modified',
-            field=django_audit_fields.fields.userfield.UserField(blank=True, help_text='Updated by admin.save_model', max_length=50, verbose_name='user modified'),
+            model_name="day14medication",
+            name="user_modified",
+            field=django_audit_fields.fields.userfield.UserField(
+                blank=True,
+                help_text="Updated by admin.save_model",
+                max_length=50,
+                verbose_name="user modified",
+            ),
         ),
         migrations.AlterField(
-            model_name='infiltratelocation',
-            name='created',
-            field=models.DateTimeField(blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow),
+            model_name="infiltratelocation",
+            name="created",
+            field=models.DateTimeField(
+                blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
+            ),
         ),
         migrations.AlterField(
-            model_name='infiltratelocation',
-            name='hostname_modified',
-            field=django_audit_fields.fields.hostname_modification_field.HostnameModificationField(blank=True, help_text='System field. (modified on every save)', max_length=50),
+            model_name="infiltratelocation",
+            name="hostname_modified",
+            field=django_audit_fields.fields.hostname_modification_field.HostnameModificationField(
+                blank=True,
+                help_text="System field. (modified on every save)",
+                max_length=50,
+            ),
         ),
         migrations.AlterField(
-            model_name='infiltratelocation',
-            name='modified',
-            field=models.DateTimeField(blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow),
+            model_name="infiltratelocation",
+            name="modified",
+            field=models.DateTimeField(
+                blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
+            ),
         ),
         migrations.AlterField(
-            model_name='infiltratelocation',
-            name='user_created',
-            field=django_audit_fields.fields.userfield.UserField(blank=True, help_text='Updated by admin.save_model', max_length=50, verbose_name='user created'),
+            model_name="infiltratelocation",
+            name="user_created",
+            field=django_audit_fields.fields.userfield.UserField(
+                blank=True,
+                help_text="Updated by admin.save_model",
+                max_length=50,
+                verbose_name="user created",
+            ),
         ),
         migrations.AlterField(
-            model_name='infiltratelocation',
-            name='user_modified',
-            field=django_audit_fields.fields.userfield.UserField(blank=True, help_text='Updated by admin.save_model', max_length=50, verbose_name='user modified'),
+            model_name="infiltratelocation",
+            name="user_modified",
+            field=django_audit_fields.fields.userfield.UserField(
+                blank=True,
+                help_text="Updated by admin.save_model",
+                max_length=50,
+                verbose_name="user modified",
+            ),
         ),
         migrations.AlterField(
-            model_name='medication',
-            name='created',
-            field=models.DateTimeField(blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow),
+            model_name="medication",
+            name="created",
+            field=models.DateTimeField(
+                blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
+            ),
         ),
         migrations.AlterField(
-            model_name='medication',
-            name='hostname_modified',
-            field=django_audit_fields.fields.hostname_modification_field.HostnameModificationField(blank=True, help_text='System field. (modified on every save)', max_length=50),
+            model_name="medication",
+            name="hostname_modified",
+            field=django_audit_fields.fields.hostname_modification_field.HostnameModificationField(
+                blank=True,
+                help_text="System field. (modified on every save)",
+                max_length=50,
+            ),
         ),
         migrations.AlterField(
-            model_name='medication',
-            name='modified',
-            field=models.DateTimeField(blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow),
+            model_name="medication",
+            name="modified",
+            field=models.DateTimeField(
+                blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
+            ),
         ),
         migrations.AlterField(
-            model_name='medication',
-            name='user_created',
-            field=django_audit_fields.fields.userfield.UserField(blank=True, help_text='Updated by admin.save_model', max_length=50, verbose_name='user created'),
+            model_name="medication",
+            name="user_created",
+            field=django_audit_fields.fields.userfield.UserField(
+                blank=True,
+                help_text="Updated by admin.save_model",
+                max_length=50,
+                verbose_name="user created",
+            ),
         ),
         migrations.AlterField(
-            model_name='medication',
-            name='user_modified',
-            field=django_audit_fields.fields.userfield.UserField(blank=True, help_text='Updated by admin.save_model', max_length=50, verbose_name='user modified'),
+            model_name="medication",
+            name="user_modified",
+            field=django_audit_fields.fields.userfield.UserField(
+                blank=True,
+                help_text="Updated by admin.save_model",
+                max_length=50,
+                verbose_name="user modified",
+            ),
         ),
         migrations.AlterField(
-            model_name='misseddoses',
-            name='created',
-            field=models.DateTimeField(blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow),
+            model_name="misseddoses",
+            name="created",
+            field=models.DateTimeField(
+                blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
+            ),
         ),
         migrations.AlterField(
-            model_name='misseddoses',
-            name='hostname_modified',
-            field=django_audit_fields.fields.hostname_modification_field.HostnameModificationField(blank=True, help_text='System field. (modified on every save)', max_length=50),
+            model_name="misseddoses",
+            name="hostname_modified",
+            field=django_audit_fields.fields.hostname_modification_field.HostnameModificationField(
+                blank=True,
+                help_text="System field. (modified on every save)",
+                max_length=50,
+            ),
         ),
         migrations.AlterField(
-            model_name='misseddoses',
-            name='modified',
-            field=models.DateTimeField(blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow),
+            model_name="misseddoses",
+            name="modified",
+            field=models.DateTimeField(
+                blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
+            ),
         ),
         migrations.AlterField(
-            model_name='misseddoses',
-            name='user_created',
-            field=django_audit_fields.fields.userfield.UserField(blank=True, help_text='Updated by admin.save_model', max_length=50, verbose_name='user created'),
+            model_name="misseddoses",
+            name="user_created",
+            field=django_audit_fields.fields.userfield.UserField(
+                blank=True,
+                help_text="Updated by admin.save_model",
+                max_length=50,
+                verbose_name="user created",
+            ),
         ),
         migrations.AlterField(
-            model_name='misseddoses',
-            name='user_modified',
-            field=django_audit_fields.fields.userfield.UserField(blank=True, help_text='Updated by admin.save_model', max_length=50, verbose_name='user modified'),
+            model_name="misseddoses",
+            name="user_modified",
+            field=django_audit_fields.fields.userfield.UserField(
+                blank=True,
+                help_text="Updated by admin.save_model",
+                max_length=50,
+                verbose_name="user modified",
+            ),
         ),
         migrations.AlterField(
-            model_name='neurological',
-            name='created',
-            field=models.DateTimeField(blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow),
+            model_name="neurological",
+            name="created",
+            field=models.DateTimeField(
+                blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
+            ),
         ),
         migrations.AlterField(
-            model_name='neurological',
-            name='hostname_modified',
-            field=django_audit_fields.fields.hostname_modification_field.HostnameModificationField(blank=True, help_text='System field. (modified on every save)', max_length=50),
+            model_name="neurological",
+            name="hostname_modified",
+            field=django_audit_fields.fields.hostname_modification_field.HostnameModificationField(
+                blank=True,
+                help_text="System field. (modified on every save)",
+                max_length=50,
+            ),
         ),
         migrations.AlterField(
-            model_name='neurological',
-            name='modified',
-            field=models.DateTimeField(blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow),
+            model_name="neurological",
+            name="modified",
+            field=models.DateTimeField(
+                blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
+            ),
         ),
         migrations.AlterField(
-            model_name='neurological',
-            name='user_created',
-            field=django_audit_fields.fields.userfield.UserField(blank=True, help_text='Updated by admin.save_model', max_length=50, verbose_name='user created'),
+            model_name="neurological",
+            name="user_created",
+            field=django_audit_fields.fields.userfield.UserField(
+                blank=True,
+                help_text="Updated by admin.save_model",
+                max_length=50,
+                verbose_name="user created",
+            ),
         ),
         migrations.AlterField(
-            model_name='neurological',
-            name='user_modified',
-            field=django_audit_fields.fields.userfield.UserField(blank=True, help_text='Updated by admin.save_model', max_length=50, verbose_name='user modified'),
+            model_name="neurological",
+            name="user_modified",
+            field=django_audit_fields.fields.userfield.UserField(
+                blank=True,
+                help_text="Updated by admin.save_model",
+                max_length=50,
+                verbose_name="user modified",
+            ),
         ),
         migrations.AlterField(
-            model_name='otherdrug',
-            name='created',
-            field=models.DateTimeField(blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow),
+            model_name="otherdrug",
+            name="created",
+            field=models.DateTimeField(
+                blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
+            ),
         ),
         migrations.AlterField(
-            model_name='otherdrug',
-            name='hostname_modified',
-            field=django_audit_fields.fields.hostname_modification_field.HostnameModificationField(blank=True, help_text='System field. (modified on every save)', max_length=50),
+            model_name="otherdrug",
+            name="hostname_modified",
+            field=django_audit_fields.fields.hostname_modification_field.HostnameModificationField(
+                blank=True,
+                help_text="System field. (modified on every save)",
+                max_length=50,
+            ),
         ),
         migrations.AlterField(
-            model_name='otherdrug',
-            name='modified',
-            field=models.DateTimeField(blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow),
+            model_name="otherdrug",
+            name="modified",
+            field=models.DateTimeField(
+                blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
+            ),
         ),
         migrations.AlterField(
-            model_name='otherdrug',
-            name='user_created',
-            field=django_audit_fields.fields.userfield.UserField(blank=True, help_text='Updated by admin.save_model', max_length=50, verbose_name='user created'),
+            model_name="otherdrug",
+            name="user_created",
+            field=django_audit_fields.fields.userfield.UserField(
+                blank=True,
+                help_text="Updated by admin.save_model",
+                max_length=50,
+                verbose_name="user created",
+            ),
         ),
         migrations.AlterField(
-            model_name='otherdrug',
-            name='user_modified',
-            field=django_audit_fields.fields.userfield.UserField(blank=True, help_text='Updated by admin.save_model', max_length=50, verbose_name='user modified'),
+            model_name="otherdrug",
+            name="user_modified",
+            field=django_audit_fields.fields.userfield.UserField(
+                blank=True,
+                help_text="Updated by admin.save_model",
+                max_length=50,
+                verbose_name="user modified",
+            ),
         ),
         migrations.AlterField(
-            model_name='significantnewdiagnosis',
-            name='created',
-            field=models.DateTimeField(blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow),
+            model_name="significantnewdiagnosis",
+            name="created",
+            field=models.DateTimeField(
+                blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
+            ),
         ),
         migrations.AlterField(
-            model_name='significantnewdiagnosis',
-            name='hostname_modified',
-            field=django_audit_fields.fields.hostname_modification_field.HostnameModificationField(blank=True, help_text='System field. (modified on every save)', max_length=50),
+            model_name="significantnewdiagnosis",
+            name="hostname_modified",
+            field=django_audit_fields.fields.hostname_modification_field.HostnameModificationField(
+                blank=True,
+                help_text="System field. (modified on every save)",
+                max_length=50,
+            ),
         ),
         migrations.AlterField(
-            model_name='significantnewdiagnosis',
-            name='modified',
-            field=models.DateTimeField(blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow),
+            model_name="significantnewdiagnosis",
+            name="modified",
+            field=models.DateTimeField(
+                blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
+            ),
         ),
         migrations.AlterField(
-            model_name='significantnewdiagnosis',
-            name='user_created',
-            field=django_audit_fields.fields.userfield.UserField(blank=True, help_text='Updated by admin.save_model', max_length=50, verbose_name='user created'),
+            model_name="significantnewdiagnosis",
+            name="user_created",
+            field=django_audit_fields.fields.userfield.UserField(
+                blank=True,
+                help_text="Updated by admin.save_model",
+                max_length=50,
+                verbose_name="user created",
+            ),
         ),
         migrations.AlterField(
-            model_name='significantnewdiagnosis',
-            name='user_modified',
-            field=django_audit_fields.fields.userfield.UserField(blank=True, help_text='Updated by admin.save_model', max_length=50, verbose_name='user modified'),
+            model_name="significantnewdiagnosis",
+            name="user_modified",
+            field=django_audit_fields.fields.userfield.UserField(
+                blank=True,
+                help_text="Updated by admin.save_model",
+                max_length=50,
+                verbose_name="user modified",
+            ),
         ),
         migrations.AlterField(
-            model_name='symptom',
-            name='created',
-            field=models.DateTimeField(blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow),
+            model_name="symptom",
+            name="created",
+            field=models.DateTimeField(
+                blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
+            ),
         ),
         migrations.AlterField(
-            model_name='symptom',
-            name='hostname_modified',
-            field=django_audit_fields.fields.hostname_modification_field.HostnameModificationField(blank=True, help_text='System field. (modified on every save)', max_length=50),
+            model_name="symptom",
+            name="hostname_modified",
+            field=django_audit_fields.fields.hostname_modification_field.HostnameModificationField(
+                blank=True,
+                help_text="System field. (modified on every save)",
+                max_length=50,
+            ),
         ),
         migrations.AlterField(
-            model_name='symptom',
-            name='modified',
-            field=models.DateTimeField(blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow),
+            model_name="symptom",
+            name="modified",
+            field=models.DateTimeField(
+                blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
+            ),
         ),
         migrations.AlterField(
-            model_name='symptom',
-            name='user_created',
-            field=django_audit_fields.fields.userfield.UserField(blank=True, help_text='Updated by admin.save_model', max_length=50, verbose_name='user created'),
+            model_name="symptom",
+            name="user_created",
+            field=django_audit_fields.fields.userfield.UserField(
+                blank=True,
+                help_text="Updated by admin.save_model",
+                max_length=50,
+                verbose_name="user created",
+            ),
         ),
         migrations.AlterField(
-            model_name='symptom',
-            name='user_modified',
-            field=django_audit_fields.fields.userfield.UserField(blank=True, help_text='Updated by admin.save_model', max_length=50, verbose_name='user modified'),
+            model_name="symptom",
+            name="user_modified",
+            field=django_audit_fields.fields.userfield.UserField(
+                blank=True,
+                help_text="Updated by admin.save_model",
+                max_length=50,
+                verbose_name="user modified",
+            ),
         ),
     ]
