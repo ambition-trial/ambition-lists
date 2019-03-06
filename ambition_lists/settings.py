@@ -40,7 +40,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "ambition_lists.urls"
+ROOT_URLCONF = "ambition_lists.tests.urls"
 
 TEMPLATES = [
     {
