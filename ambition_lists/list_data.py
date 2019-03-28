@@ -1,6 +1,7 @@
 from ambition_form_validators import HEADACHE, VISUAL_LOSS
 from edc_constants.constants import OTHER, NORMAL, NONE, NOT_APPLICABLE
 from edc_list_data import PreloadData
+from django.conf import settings
 
 list_data = {
     "ambition_lists.antibiotic": [
@@ -109,4 +110,5 @@ list_data = {
 }
 
 
-preload_data = PreloadData(list_data=list_data)
+if settings.APP_NAME != "ambition_lists":
+    preload_data = PreloadData(list_data=list_data)
