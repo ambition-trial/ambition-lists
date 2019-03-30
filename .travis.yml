@@ -1,8 +1,5 @@
 language: python
 
-python:
-- 3.7
-
 dist: xenial
 
 sudo: true
@@ -19,7 +16,7 @@ install:
 - pip install flake8 coverage codecov tox-travis
 
 before_script:
-- flake8 ambition_lists
+- flake8 edc_model_wrapper
 - mysql -e 'create database edc character set utf8;'
 
 script:
