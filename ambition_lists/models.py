@@ -59,3 +59,8 @@ class InfiltrateLocation(ListModelMixin, BaseUuidModel):
 class MissedDoses(ListModelMixin, BaseUuidModel):
     class Meta:
         db_table = "ambition_subject_misseddoses"
+
+
+class ArvRegimens(ListModelMixin, BaseUuidModel):
+    class Meta:
+        db_table = "ambition_subject_arvregimens"

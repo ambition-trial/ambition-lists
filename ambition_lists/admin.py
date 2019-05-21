@@ -3,7 +3,7 @@ from django.contrib import admin
 from .admin_site import ambition_lists_admin
 from .models import Antibiotic, Day14Medication, Medication, Neurological
 from .models import Symptom, OtherDrug, AbnormalResultsReason
-from .models import CXRType, InfiltrateLocation, MissedDoses
+from .models import CXRType, InfiltrateLocation, MissedDoses, ArvRegimens
 
 
 @admin.register(Antibiotic, site=ambition_lists_admin)
@@ -53,4 +53,9 @@ class InfiltrateLocationAdmin(admin.ModelAdmin):
 
 @admin.register(MissedDoses, site=ambition_lists_admin)
 class MissedDosesAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(ArvRegimens, site=ambition_lists_admin)
+class ArvRegimensAdmin(admin.ModelAdmin):
     pass
