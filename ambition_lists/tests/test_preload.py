@@ -5,6 +5,7 @@ from ..list_data import list_data
 from ..models import (
     AbnormalResultsReason,
     Antibiotic,
+    ArvRegimens,
     CXRType,
     Day14Medication,
     InfiltrateLocation,
@@ -24,6 +25,7 @@ class TestPreload(TestCase):
         PreloadData(list_data=list_data)
         self.assertGreater(AbnormalResultsReason.objects.count(), 0)
         self.assertGreater(Antibiotic.objects.count(), 0)
+        self.assertGreater(ArvRegimens.objects.count(), 0)
         self.assertGreater(CXRType.objects.count(), 0)
         self.assertGreater(Day14Medication.objects.count(), 0)
         self.assertGreater(InfiltrateLocation.objects.count(), 0)

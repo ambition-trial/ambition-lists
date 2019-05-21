@@ -1,7 +1,7 @@
 from ambition_form_validators import HEADACHE, VISUAL_LOSS
-from edc_constants.constants import OTHER, NORMAL, NONE, NOT_APPLICABLE
-from edc_list_data import PreloadData
 from django.conf import settings
+from edc_constants.constants import OTHER, NORMAL, NONE, NOT_APPLICABLE, UNKNOWN
+from edc_list_data import PreloadData
 
 list_data = {
     "ambition_lists.antibiotic": [
@@ -106,6 +106,19 @@ list_data = {
         ("dose_2", "Dose 2"),
         ("dose_3", "Dose 3"),
         ("dose_4", "Dose 4"),
+    ],
+    "ambition_lists.arvregimens": [
+        ("TDF_FTC/3TC", "TDF + FTC/3TC"),
+        ("AZT_FTC/3TC", "AZT + FTC/3TC"),
+        ("EFV", "EFV"),
+        ("NVP", "NVP"),
+        ("DTG", "DTG"),
+        ("AZT_r", "AZT/r"),
+        ("DRV_r", "DRV/r"),
+        ("Lopinavir_r", "Lopinavir/r"),
+        (NOT_APPLICABLE, "Not applicable"),
+        (UNKNOWN, "Unknown"),
+        (OTHER, "Other"),
     ],
 }
 
