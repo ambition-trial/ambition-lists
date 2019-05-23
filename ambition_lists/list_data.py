@@ -33,7 +33,7 @@ list_data = {
         (NONE, "None, no other medications given"),
         (NOT_APPLICABLE, "Not applicable"),
     ],
-    "ambition_lists.medication": [("TMP-SMX", "TMP-SMX"), (OTHER, "Other, specify;")],
+    "ambition_lists.medication": [("TMP-SMX", "TMP-SMX"), (OTHER, "Other, specify")],
     "ambition_lists.otherdrug": [
         ("anti_convulsants", "Anticonvulsants"),
         ("antibiotics", "Antibiotics"),
@@ -53,7 +53,7 @@ list_data = {
         ("malaria", "Malaria"),
         ("tb_extra_pulmonary", "TB extra-pulmonary"),
         ("tb_pulmonary", "TB pulmonary"),
-        (OTHER, "Other, please specify:"),
+        (OTHER, "Other, specify"),
     ],
     "ambition_lists.symptom": [
         ("double_vision", "Double vision"),
@@ -118,8 +118,7 @@ list_data = {
         ("Lopinavir_r", "Lopinavir/r"),
         (NOT_APPLICABLE, "Not applicable"),
         (UNKNOWN, "Unknown"),
-        (OTHER, "Other"),
-    ],
+        (OTHER, "Other, specify")],
 }
 
 
