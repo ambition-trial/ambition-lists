@@ -119,7 +119,8 @@ list_data = {
         ("NVP", "NVP"),
         (NOT_APPLICABLE, "Not applicable"),
         (UNKNOWN, "Unknown"),
-        (OTHER, "Other, specify")],
+        (OTHER, "Other, specify"),
+    ],
 }
 
 
