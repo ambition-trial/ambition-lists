@@ -5,21 +5,31 @@ from django.db import migrations
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('ambition_lists', '0005_auto_20190523_1512'),
-    ]
+    dependencies = [("ambition_lists", "0005_auto_20190523_1512")]
 
     operations = [
         migrations.AlterModelOptions(
-            name='arvregimens',
-            options={'ordering': ['display_index', 'name'], 'verbose_name': 'Arv Regimen', 'verbose_name_plural': 'Arv Regimens'},
+            name="arvregimens",
+            options={
+                "ordering": ["display_index", "name"],
+                "verbose_name": "Arv Regimen",
+                "verbose_name_plural": "Arv Regimens",
+            },
         ),
         migrations.AlterModelOptions(
-            name='misseddoses',
-            options={'ordering': ['display_index', 'name'], 'verbose_name': 'Missed Dose', 'verbose_name_plural': 'Missed Doses'},
+            name="misseddoses",
+            options={
+                "ordering": ["display_index", "name"],
+                "verbose_name": "Missed Dose",
+                "verbose_name_plural": "Missed Doses",
+            },
         ),
         migrations.AlterModelOptions(
-            name='significantnewdiagnosis',
-            options={'ordering': ['display_index', 'name'], 'verbose_name': 'Significant New Diagnosis', 'verbose_name_plural': 'Significant New Diagnoses'},
+            name="significantnewdiagnosis",
+            options={
+                "ordering": ["display_index", "name"],
+                "verbose_name": "Significant New Diagnosis",
+                "verbose_name_plural": "Significant New Diagnoses",
+            },
         ),
     ]

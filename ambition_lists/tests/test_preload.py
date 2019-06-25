@@ -19,7 +19,6 @@ from ..models import (
 
 
 class TestPreload(TestCase):
-
     def test_preload(self):
 
         PreloadData(list_data=list_data)
