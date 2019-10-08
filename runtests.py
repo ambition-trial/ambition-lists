@@ -18,6 +18,8 @@ DEFAULT_SETTINGS = DefaultTestSettings(
     APP_NAME=app_name,
     BASE_DIR=base_dir,
     ETC_DIR=os.path.join(base_dir, app_name, "tests", "etc"),
+    ADVERSE_EVENT_ADMIN_SITE="ambition_ae_admin",
+    ADVERSE_EVENT_APP_LABEL="ambition_ae",
     INSTALLED_APPS=[
         'django.contrib.admin',
         'django.contrib.auth',
