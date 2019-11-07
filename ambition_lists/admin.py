@@ -1,9 +1,20 @@
 from django.contrib import admin
 from edc_list_data.admin import ListModelAdminMixin
+
 from .admin_site import ambition_lists_admin
-from .models import Antibiotic, Day14Medication, Medication, Neurological
-from .models import Symptom, OtherDrug, AbnormalResultsReason
-from .models import CXRType, InfiltrateLocation, MissedDoses, ArvRegimens
+from .models import (
+    Antibiotic,
+    Day14Medication,
+    Medication,
+    Neurological,
+    Symptom,
+    OtherDrug,
+    AbnormalResultsReason,
+    CXRType,
+    InfiltrateLocation,
+    MissedDoses,
+    ArvRegimens,
+)
 
 
 @admin.register(Antibiotic, site=ambition_lists_admin)
